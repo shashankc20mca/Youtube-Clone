@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,1);
+    color:white;
+ 
+
+}
+.content{
+    display: flex;
+    
+}
+
+.side{
+height: 90vh;
+width:20vw;
+overflow:auto;
+transition:all 3s ease-in-out 1s ;
+
+
+
+}
+.side-unit{
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    border:2px solid wheat ; 
+   
+
+}
+.side-unit ul li:hover{
+    box-shadow: 2px 2px 8px white;
+
+}
+.side-unit ul li{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+
+}
+
+.side-unit .head{
+    display: flex;
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    
+
+}
+.side-unit .head:hover{
+    box-shadow: 2px 2px 8px white;
+}
+.side-unit .head .text{
+    margin-right: 1rem;
+}
+.side-unit a{
+    text-decoration: none;
+    color:white;
+    
+}
+.side-unit ul li a i{
+    margin-right: 1.5rem;
+
+}
+
+
+
+
+
+.main{
+display: flex;
+flex-direction: row-reverse;
+flex:1;
+height: 90vh;
+width: 80vw;
+overflow: auto;
+}
+.btn{
+    width:5rem;
+    height:2rem;
+    background-color:black;
+    color:white;
+    font-size:1.2rem;
+    border-radius:1rem;
+
+    margin: 0.5rem;
+    cursor: pointer;
+    
+    
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    width: 24vw;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.btn:hover{
+  
+   box-shadow: 2px 2px 8px white;
+}
+.cards{
+   overflow:auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+}
+.title{
+    display: flex;
+    width :23vw;
+    justify-content: space-around;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+.title:hover{
+    opacity:1;
+}
+
+.title img{
+    height:2.2rem;
+    width:2.2rem;
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+.ti-sub a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-de{
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    
+}
+
+.card-de video{
+    height: 30vh;
+    width :23vw;
+    border:2px solid wheat;
+    border-radius: 1.2rem;
+    opacity: 0.7;
+}
+.card-de video:hover{
+    opacity :1;
+    box-shadow: 2px 2px 8px white;
+
+}
+
+
+
+.nav{
+    display:flex;
+justify-content: space-between;
+    margin: 0.5rem;
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    position: sticky;
+    height: 12vh;
+   
+}
+
+.nav1{
+display: flex;
+align-items: baseline;
+
+
+}
+
+.nav1 a{
+  
+    text-decoration: none;
+    color: white;
+}
+.nav1-icon{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+      padding:0.5rem 0.2rem 0.5rem 0.2rem; 
+}
+.nav2{
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+   
+   
+}
+.nav1-icon:hover{
+    box-shadow: 2px 2px 8px white;
+}
+.nav3{
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+    
+    
+}
+
+input{
+    font-size: inherit;
+   background-color: inherit;
+   width:30vw;
+   border-radius:1rem;
+   
+}
+
+@media screen and (max-width:1056px) {
+    
+   .side-unit{
+    margin: 0.4rem;
+    padding:0.4rem 0.1rem 0.4rem 0.1rem;
+    font-size:0.9rem;
+   
+
+   }
+
+   .btn{
+    width:4rem;
+    height:2rem;
+    background-color: rgb(128, 128, 128,0.5);
+    color:white;
+    font-size:0.9rem;
+    border-radius:1rem;
+
+    margin: 0.5rem;
+    
+    
+}
+.title{
+    display: flex;
+    width :23vw;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+.nav1-icon{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+      padding:0.5rem 0.2rem 0.5rem 0.2rem; 
+}
+input{
+    font-size: inherit;
+   width:30vw;
+   border-radius:0.8rem;
+   
+}
+.card-de video{
+    height: 30vh;
+    width :23vw;
+    border:2px solid wheat;
+    border-radius: 1rem;
+}
+.title img{
+    height:2rem;
+    width:2rem;
+    margin: 0.4rem;
+    padding:0.4rem 0.1rem 0.4rem 0.1rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+}
+@media screen and (min-width:0px){
+    .side{
+       
+        position:static;
+    }
+    
+    input[type="checkbox"]:checked + .side{
+        position: absolute;
+        left:-300px;
+
+    }
+}
+@media screen and (max-width:994px) {
+    
+   .side-unit{
+    margin: 0.3rem;
+    padding:0.3rem 0.2rem 0.3rem 0.2rem;
+    font-size:0.7rem;
+
+   }
+  
+
+   .btn{
+    width:3rem;
+    height:2rem;
+    background-color: rgb(128, 128, 128,0.5);
+    color:white;
+    font-size:0.5rem;
+    border-radius:0.7rem;
+
+    margin: 0.2rem;
+    
+    
+}
+.card-de{
+    margin: 0.3rem;
+    padding:0.3rem 0.1rem 0.3rem 0.1rem;
+    
+}
+.title{
+    display: flex;
+    width :23vw;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+.nav1-icon{
+    font-size: 1rem;
+    margin: 0.3rem;
+      padding:0.3rem 0.1rem 0.3rem 0.1rem; 
+}
+input{
+    font-size: inherit;
+   width:30vw;
+   border-radius:0.8rem;
+   
+}
+
+    
+}
+/* @media screen and (max-width:840px)  {
+ 
+    
+        .side{
+            position: absolute;
+            left:-300px;
+        }
+        
+        input[type="checkbox"]:checked + .side{
+            position:static;
+
+        }
+        
+    
+} */
+@media  screen and (max-width:808px) {
+    .cards{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-de video{
+        height: 60vh;
+        width :43vw;
+        border:2px solid wheat;
+        border-radius: 1.2rem;
+    }
+    .title{
+        display: flex;
+        width :43vw;
+        justify-content: space-around;
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+
+
